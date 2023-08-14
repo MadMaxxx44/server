@@ -1,6 +1,0 @@
-20230812	11:15:43	8ff42835-af31-4fd5-8c4a-267f742826f3	Error: ENOENT: no such file or directory, stat 'D:\React\server\index.html'
-20230812	11:17:43	f5a019b1-84a4-4a16-afd9-695a14e77e8b	Error: ENOENT: no such file or directory, stat 'D:\React\server\views\subdir\test.html'
-20230812	11:17:52	9011e0de-1fa2-4528-88f9-7b5e1a0f3371	Error: ENOENT: no such file or directory, stat 'D:\React\server\views\subdir\test.html'
-20230812	11:18:43	9eed354e-05c2-4eb5-bf66-69177a5ca598	Error: ENOENT: no such file or directory, stat 'D:\React\server\404.html'
-20230812	11:29:13	94144d5c-f4fc-4f14-a421-1f5b7c87f762	Error: ENOENT: no such file or directory, stat 'D:\React\server\new-page.html'
-20230812	17:21:20	4d894f17-d48f-497e-9718-5c6a214ec3d4	TypeError: allowedOrigins.includes is not a function

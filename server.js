@@ -35,6 +35,9 @@ app.use("/register", require("./routes/register"));
 app.use("/auth", require("./routes/auth"));
 app.use("/refresh", require("./routes/refresh"));
 app.use("/logout", require("./routes/logout"));
+app.use("/green", require("./routes/green"));
+app.use("/red", require("./routes/red"));
+app.use("/chart", require("./routes/chart"));
 
 app.use(verifyJWT);
 app.use("/employees", require("./routes/api/employees"));
@@ -56,41 +59,3 @@ mongoose.connection.once("open", () => {
   console.log(`Connected to MongoDB`);
   app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 });
-
-// const express = require("express");
-// const bodyParser = require("body-parser");
-// const cors = require("cors");
-
-// const app = express();
-// const port = 3000;
-
-// // Middleware to parse request bodies
-// app.use(cors());
-// app.use(bodyParser.json());
-
-// // In-memory data storage
-// const storedData = {};
-
-// // Store data
-// app.post("/store", (req, res) => {
-//   const { dates } = req.body;
-//   for (const date in dates) {
-//     storedData[date] = dates[date];
-//   }
-//   res.status(200).json({ message: "Data stored successfully" });
-// });
-
-// // Retrieve data
-// app.get("/retrieve", (req, res) => {
-//   const data = storedData;
-//   if (data) {
-//     res.status(200).json(data);
-//   } else {
-//     res.status(404).json({ message: "Data not found" });
-//   }
-// });
-
-// // Start the server
-// app.listen(port, () => {
-//   console.log(`Server is running on port ${port}`);
-// });
